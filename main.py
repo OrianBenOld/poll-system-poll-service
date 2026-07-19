@@ -1,7 +1,7 @@
 # Author: Orian Ben Old
 from fastapi import FastAPI
-from .app.controller.poll_controller import router as poll_router
-from .app.repository.database import database
+from app.controller.poll_controller import router as poll_router
+from app.repository.database import database
 
 app = FastAPI(title="Poll Service")
 app.include_router(poll_router)
